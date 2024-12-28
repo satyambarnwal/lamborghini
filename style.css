@@ -1,0 +1,87 @@
+@font-face {
+  font-family: Machina;
+  src: url(font/659dbdfd5a080be8d348316e_PP\ Neue\ Machina\ Inktrap\ Medium.ttf);
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(font/Gilroy-Heavy.ttf);
+}
+
+@font-face {
+  font-family: Caliber;
+  src: url(font/caliber-grotesk-extrabold.otf);
+}
+
+@font-face {
+  font-family: Wergel;
+  src: url(font/AronWergel-Rpamv.ttf);
+}
+
+:root {
+  --salmon: #fa8072;
+  --black: #000;
+  --white: #fff;
+  --blue: #6495ed;
+  --dsalmon: #740938;
+  --dblue: #0b192c;
+}
+body {
+  transition: background-color ease-out 0.5s;
+}
+
+.vdodiv {
+  clip-path: circle(var(--clip) at 50% 50%);
+}
+
+*::selection {
+  background-color: var(--salmon);
+}
+
+body[theme="black"] {
+  background-color: var(--black);
+}
+
+body[theme="black"] .section {
+  color: var(--white);
+}
+
+body[theme="blue"] {
+  background-color: var(--blue);
+}
+
+body[theme="blue"] .section {
+  color: var(--dblue);
+}
+
+body[theme="salmon"] {
+  background-color: var(--salmon);
+}
+
+body[theme="salmon"] .section {
+  color: var(--dsalmon);
+}
+
+body[theme="white"] {
+  background-color: var(--white);
+}
+
+body[theme="white"] .section {
+  color: var(--black);
+}
+
+.huracan {
+  clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+}
+
+.urus {
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.revuelto {
+  clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+}
+
+.temerario {
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
